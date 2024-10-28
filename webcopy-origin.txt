@@ -1,0 +1,136 @@
+Uri: https://cdn.tailwindcss.com/3.4.5
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\3.4.5
+Content Type: text/javascript
+
+Uri: https://darkwolf.b-cdn.net/img/back.svg
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\back.svg
+Content Type: image/svg+xml
+
+Uri: https://darkwolf.b-cdn.net/img/buy1.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\buy1.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/img/Frame 39 4K.mp4
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\Frame 39 4K.mp4
+Content Type: video/mp4
+
+Uri: https://darkwolf.b-cdn.net/img/light2 4K.mp4
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\light2 4K.mp4
+Content Type: video/mp4
+
+Uri: https://darkwolf.b-cdn.net/img/lon.svg
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\lon.svg
+Content Type: image/svg+xml
+
+Uri: https://darkwolf.b-cdn.net/img/lp.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\lp.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/img/main.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\main.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/img/public.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\public.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/img/tax.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\tax.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/img/tokenbg.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\img\tokenbg.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/t1/htb.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\htb.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/t1/qmm.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\qmm.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/t1/to.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\to.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/t1/wd.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\wd.png
+Content Type: image/png
+
+Uri: https://darkwolf.b-cdn.net/vid/WOLF 3.mov
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\vid\WOLF 3.mov
+Content Type: video/quicktime
+
+Uri: https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Neucha&display=swap
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\css2-2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/londrinasolid/v17/flUhRq6sw40kQEJxWNgkLuudGcNZ.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\londrinasolid\v17\flUhRq6sw40kQEJxWNgkLuudGcNZ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/londrinasolid/v17/flUiRq6sw40kQEJxWNgkLuudGfv1CjY0.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\londrinasolid\v17\flUiRq6sw40kQEJxWNgkLuudGfv1CjY0.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/londrinasolid/v17/flUiRq6sw40kQEJxWNgkLuudGfvdDzY0.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\londrinasolid\v17\flUiRq6sw40kQEJxWNgkLuudGfvdDzY0.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/londrinasolid/v17/flUjRq6sw40kQEJxWNgkLuudGfs9KBY.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\londrinasolid\v17\flUjRq6sw40kQEJxWNgkLuudGfs9KBY.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/neucha/v17/q5uGsou0JOdh94bvug.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\neucha\v17\q5uGsou0JOdh94bvug.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/protestrevolution/v2/11hcGofZ0kXBbxQXFB7MJsjtqnVw6Z2s8A.ttf
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\s\protestrevolution\v2\11hcGofZ0kXBbxQXFB7MJsjtqnVw6Z2s8A.ttf
+Content Type: font/ttf
+
+Uri: https://www.darkwolf.monster/
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\index.htm
+Content Type: text/html
+
+Uri: https://www.darkwolf.monster/1b.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\1b.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/image 19.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\image 19.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/image 20.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\image 20.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/image 21.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\image 21.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/style.css
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\style.css
+Content Type: text/css
+
+Uri: https://www.darkwolf.monster/t1/book.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\book.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/t1/dwlogo.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\dwlogo.png
+Content Type: image/png
+
+Uri: https://www.darkwolf.monster/t1/lore.png
+File Name: C:\Downloaded Web Sites\www.darkwolf.monster\t1\lore.png
+Content Type: image/png
+

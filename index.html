@@ -1,0 +1,1378 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="3.4.5"></script>
+    <link rel="shortcut icon" href="img/main.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Wolf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  </head>
+  <body class="overflow-hidden">
+    <!-- Loading -->
+
+    <!-- About -->
+    <div id="loadingScreen" class="bg-blacktop-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen">
+      <div class="relative h-screen flex justify-center items-center w-full">
+        <video class="w-full h-full md:fixed absolute z-[99] object-cover" src="img/Frame%2039%204K.mp4" muted="" loop="" autoplay=""></video>
+        <div class="flex justify-center items-center relative z-[1000]">
+          <h1 id="lairText" class="text-[#FF0000] lg:text-8xl md:text-5xl text-3xl text-center">
+            ENTERING THE LAIR<span id="dots">...</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div id="mob1" class="fixed bottom-5 left-0 right-0 left50 z-[60] copy-text md:w-[450px] w-full mx-auto transition-all duration-1000 ease-in-out">
+      <div class="flex gap-3 justify-center items-center">
+
+        <a href="https://pump.fun/EGoywfnMhzHVSVbFmzEt2yrPKHuJTQrieZ7CTG9pump" target="_blank" class="hover:text-[#FF0026] text-[#B10000]">
+          <!-- <svg class="w20 lg:w-7 lg:h-7 svg1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-4 -4 34 34"  preserveAspectRatio="none">
+            <path d="M0 0 C2.97367685 0.05872611 4.06501147 0.23900688 6.6875 1.8125 C8.89927972 5.49879954 8.53171275 8.04426192 8.1875 12.3125 C7.8575 12.9725 7.5275 13.6325 7.1875 14.3125 C6.5275 14.3125 5.8675 14.3125 5.1875 14.3125 C4.80658203 15.17294922 4.80658203 15.17294922 4.41796875 16.05078125 C1.52405205 21.37007576 -2.73562215 25.64367493 -8.5 27.5 C-12.22510904 27.28914477 -13.91687976 26.62899619 -16.8125 24.3125 C-18.99552474 21.03796289 -19.37208646 20.11090507 -18.8125 16.3125 C-17.01953125 13.8125 -17.01953125 13.8125 -14.625 11.3125 C-13.39716797 10.01505859 -13.39716797 10.01505859 -12.14453125 8.69140625 C-11.37496094 7.90636719 -10.60539063 7.12132812 -9.8125 6.3125 C-9.25949219 5.74402344 -8.70648438 5.17554688 -8.13671875 4.58984375 C-7.04290271 3.48312133 -5.93011226 2.39518688 -4.8125 1.3125 C-3.8125 0.3125 -3.8125 0.3125 0 0 Z M-1.8125 2.3125 C-3.92020734 4.67625566 -3.92020734 4.67625566 -5.8125 7.3125 C-6.4725 7.9725 -7.1325 8.6325 -7.8125 9.3125 C-6.71648831 10.32143131 -5.61036082 11.31938225 -4.5 12.3125 C-3.88511719 12.869375 -3.27023438 13.42625 -2.63671875 14 C-0.78118665 15.60451498 -0.78118665 15.60451498 2.1875 15.3125 C4.58523575 13.00356928 5.15155581 11.56410935 5.625 8.25 C5.46749732 5.23849076 5.46749732 5.23849076 3.375 3.4375 C1.15282836 2.08382599 1.15282836 2.08382599 -1.8125 2.3125 Z " fill="#AF1717" transform="translate(18.8125,0.6875)"/>
+            <path d="M0 0 C2.90161446 0.05209362 3.81958643 0.08112608 6.1875 1.875 C7.49429016 5.27265441 6.86634177 7.80797526 6.125 11.3125 C5.795 11.3125 5.465 11.3125 5.125 11.3125 C4.465 9.0025 3.805 6.6925 3.125 4.3125 C1.475 3.9825 -0.175 3.6525 -1.875 3.3125 C-2.473125 4.116875 -3.07125 4.92125 -3.6875 5.75 C-5.875 8.3125 -5.875 8.3125 -8.875 9.3125 C-9.205 8.3225 -9.535 7.3325 -9.875 6.3125 C-3.875 0.3125 -3.875 0.3125 0 0 Z " fill="#AE504E" transform="translate(18.875,0.6875)"/>
+            <path d="M0 0 C2 2 2 2 2 5 C2.99 5.33 3.98 5.66 5 6 C5.33 6.66 5.66 7.32 6 8 C7.89533342 8.46523063 7.89533342 8.46523063 10.0625 8.625 C11.361875 8.74875 12.66125 8.8725 14 9 C13.34 9.66 12.68 10.32 12 11 C4.98540146 10.88686131 4.98540146 10.88686131 1.5 7.75 C-0.09290174 4.82968014 -0.37325636 3.26599313 0 0 Z " fill="#940A07" transform="translate(0,17)"/>
+            <path d="M0 0 C0.66 0 1.32 0 2 0 C2.125 7.75 2.125 7.75 1 10 C0.34 10 -0.32 10 -1 10 C-1.33 10.66 -1.66 11.32 -2 12 C-2.66 11.67 -3.32 11.34 -4 11 C-3.34 9.68 -2.68 8.36 -2 7 C-1.34 7 -0.68 7 0 7 C0 4.69 0 2.38 0 0 Z " fill="#9B2523" transform="translate(25,5)"/>
+            <path d="M0 0 C-0.33 2.64 -0.66 5.28 -1 8 C-1.99 7.67 -2.98 7.34 -4 7 C-4.33 5.02 -4.66 3.04 -5 1 C-3 0 -3 0 0 0 Z " fill="#C03F3E" transform="translate(6,15)"/>
+            <path d="M0 0 C6.15234375 0.5859375 6.15234375 0.5859375 8 1 C9.53445094 4.06890187 8.54984289 6.70094266 8 10 C7.67 10 7.34 10 7 10 C6.6596875 8.329375 6.6596875 8.329375 6.3125 6.625 C5.39376342 2.83961627 5.39376342 2.83961627 2.375 1.5625 C1.59125 1.376875 0.8075 1.19125 0 1 C0 0.67 0 0.34 0 0 Z " fill="#BD9D9B" transform="translate(17,2)"/>
+            <path d="M0 0 C0.33 0.66 0.66 1.32 1 2 C-2.625 6.875 -2.625 6.875 -6 8 C-4.55746343 4.63408134 -2.66735273 2.48952921 0 0 Z " fill="#84100A" transform="translate(8,8)"/>
+            <path d="" fill="#004400" transform="translate(0,0)"/>
+            <path d="" fill="#0F1C1B" transform="translate(0,0)"/>
+            <path d="" fill="#062A00" transform="translate(0,0)"/>
+          </svg> -->
+          <img class="w20 lg:w-5 lg:h-5" src="2.png" id="myImage"/>
+        </a>
+
+        <a href="https://t.me/WolfSolFun" target="_blank" class="hover: text-[#B10000]">
+          <svg class="w20 lg:w-7 lg:h-7" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_253_62)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M41.2022 9.22909C41.717 9.01241 42.2805 8.93768 42.834 9.01267C43.3875 9.08767 43.9108 9.30965 44.3494 9.65552C44.788 10.0014 45.1259 10.4585 45.3279 10.9793C45.5299 11.5 45.5887 12.0654 45.498 12.6166L40.773 41.277C40.3147 44.0416 37.2813 45.627 34.7459 44.2499C32.6251 43.0978 29.4751 41.3228 26.6418 39.4708C25.2251 38.5437 20.8855 35.5749 21.4188 33.4624C21.8772 31.6562 29.1688 24.8687 33.3355 20.8333C34.9709 19.2478 34.2251 18.3333 32.2938 19.7916C27.498 23.4124 19.798 28.9187 17.2522 30.4687C15.0063 31.8353 13.8355 32.0687 12.4355 31.8353C9.88134 31.4103 7.51259 30.752 5.57926 29.9499C2.96676 28.8666 3.09384 25.2749 5.57718 24.2291L41.2022 9.22909Z" fill="currentColor"></path>
+            </g>
+            <defs>
+              <clippath id="clip0_253_62">
+                <rect width="50" height="50" fill="white"></rect>
+              </clippath>
+            </defs>
+          </svg>
+
+          <!-- <img src="./t1/tg.png" alt="Tg" class="w50 hover:scale-110 hover:opacity-70 transition-all duration-300" /> -->
+        </a>
+        <a href="https://x.com/WolfSolFun" target="_blank" class="hover: text-[#B10000]">
+          <svg class="w20 lg:w-6 lg:h-6" width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.9343 15.3594L33.7371 0H28.4691L19.4606 11.7306L11.4686 0H0L13.3817 19.638L0.805714 36H6.07543L15.8554 23.274L24.5314 36H36L21.9343 15.3594ZM17.8543 20.6694L15.3771 17.0352L5.76 2.9286H9.72L17.4823 14.2992L19.956 17.9352L30.2726 33.0714H26.3126L17.8543 20.6694Z" fill="currentColor"></path>
+          </svg>
+
+          <!-- <img src="./t1/x.png" alt="Tg" class="w-9 h-9 w20 hover:scale-110 hover:opacity-70 transition-all duration-300" /> -->
+        </a>
+        
+      </div>
+      <div class="xl:w-[500px] w-[500px] relative mx-auto">
+        <button class="absolute md:right-4 right-2 md:top-4 top-3 hover:opacity-70"
+        style="top: 12px; right: 12px;">
+          <svg class="text-white tb" width="18" height="18" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.2832 5.75H8.31055C6.8964 5.75 5.75 6.8964 5.75 8.31055V18.2832C5.75 19.6974 6.8964 20.8438 8.31055 20.8438H18.2832C19.6974 20.8438 20.8438 19.6974 20.8438 18.2832V8.31055C20.8438 6.8964 19.6974 5.75 18.2832 5.75Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+            <path d="M17.2275 5.75L17.25 4.67188C17.2481 4.00527 16.9825 3.36652 16.5111 2.89515C16.0397 2.42379 15.401 2.15815 14.7344 2.15625H5.03125C4.26945 2.1585 3.53949 2.46213 3.00081 3.00081C2.46213 3.53949 2.1585 4.26945 2.15625 5.03125V14.7344C2.15815 15.401 2.42379 16.0397 2.89515 16.5111C3.36652 16.9825 4.00527 17.2481 4.67188 17.25H5.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <input readonly="" type="text" class="text mt-5 mb-3 drop bc text-white tb md:text-base text-[9px] font-semibold text-center capitalize leading-tight xl:w-[450px] w-[260px] mx-auto flex items-center justify-center xl:h-12 h-10 bg-[#290000D9] gr rounded-[10px] outline-none border border-[#FF0000]" style="min-width: 500px;"  value="EGoywfnMhzHVSVbFmzEt2yrPKHuJTQrieZ7CTG9pump">
+      </div>
+    </div>
+    
+    <div id="mob2" class="w-full h-screen relative transition-all duration-1000 ease-in-out">
+      <!-- <img
+        id="image1"
+        aria-label="one"
+        src="https://darkwolf.b-cdn.net/img/main.png"
+        alt="room1"
+        class="md:fixed w-full h-full"
+      /> -->
+      <video id="image1" class="md:fixed w-full h-full object-cover" src="img/light2%204K.mp4" muted="" autoplay="" loop=""></video>
+      <img id="image3" aria-label="two" src="t1/qmm.png" alt="room2" class="opacity-0 md:fixed w-full h-full">
+      <img id="image2" aria-label="two" src="t1/to.png" alt="room3" class="opacity-0 md:fixed w-full h-full">
+      <img id="image4" aria-label="two" src="t1/wd.png" alt="room3" class="opacity-0 md:fixed w-full h-full">
+      <img id="image5" aria-label="five" src="t1/htb.png" alt="room5" class="opacity-0 md:fixed w-full h-full">
+      <img id="image6" aria-label="Six" src="t1/book.png" alt="room5" class="md:fixed w-full h-full image6">
+      <img id="image7" aria-label="Six" src="t1/lore.png" alt="room5" class="opacity-0 md:fixed w-full h-full image7">
+      <!--  -->
+      <div id="hoverBox1" class="cursor-pointer bunk shake-button bg-blacks absolute bottom-0 md:right-[0%] right-[0%] 2xl:w-[550px] md:w-[400px] 2xl:h-[240px] md:h-[200px] w-[200px] h-[130px]">
+        <a class="shake-button md:w-[100px] md:h-[100px] w-[50px] h-[50px] bg-whites absolute 2xl:-mt-[40px] -mt-[30px] 2xl:ml-4 -ml-[20px] spot-dot_Spot--collections__3ZaRR rounded-[9999px] z-50" style="transform: translateX(58.8125px)">
+          <span class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"><span class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"></span><span class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"></span><span class="animate-pulse col-start-1 row-start-1 block w-3 h-3 rounded-[9999px] bg-white"></span></span>
+        </a>
+        <!-- Dots -->
+      </div>
+      <!--  -->
+      <div onclick="pizzaopen();" id="hoverBox" class="cursor-pointer chest bg-blacks fixed 2xl:left-[56%] 2xl:right-[40%] md:left-[56%] md:right-[40%] left-[96%] right-[5%] inset-x-40 mx-auto md:top-[48%] md:bottom-[50%] top-[40%] bottom-[60%] inset-y-0 2xl:w-[290px] md:w-[210px] w-[130px] 2xl:h-[200px] h-[130px]">
+        <a class="md:w-[100px] md:h-[100px] w-[50px] h-[50px] bg-whites md:-mt-[50px] -mt-[20px] md:-ml-[40px] absolute spot-dot_Spot--collections__3ZaRR rounded-[9999px] z-50" style="transform: translateX(58.8125px)">
+          <span class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"><span class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"></span><span class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"></span><span class="animate-pulse col-start-1 row-start-1 block w-3 h-3 rounded-[9999px] bg-white"></span></span>
+          <!-- <span
+            class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"
+            ><span
+              class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"
+            ></span
+            ><span
+              class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"
+            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="animate-pulse col-start-1 row-start-1 block rounded-[9999px]"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+              />
+              <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+              <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+            </svg> </span
+        > -->
+        </a>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div onclick="aboutopen();" id="hoverBox2" class="cursor-pointer wolff bg-blacks fixed 2xl:left-[45%] 2xl:right-[65%] md:left-[45%] md:right-[65%] left-[70%] right-[30%] mx-auto md:top-[30%] md:bottom-[70%] top-[30%] bottom-[70%] inset-y-0 2xl:w-[190px] w-[110px] 2xl:h-[280px] md:h-[180px] h-[130px]">
+        <a class="md:w-[100px] md:h-[100px] w-[50px] h-[50px] bg-whites absolute spot-dot_Spot--collections__3ZaRR rounded-[9999px] z-50 top-4 left-0 leftwolf" style="transform: translateX(58.8125px)">
+          <span class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"><span class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"></span><span class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"></span><span class="animate-pulse col-start-1 row-start-1 block w-3 h-3 rounded-[9999px] bg-white"></span></span>
+          <!-- <span
+            class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"
+            ><span
+              class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"
+            ></span
+            ><span
+              class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"
+            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="animate-pulse col-start-1 row-start-1 block rounded-[9999px]"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"
+              />
+              <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+              <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+            </svg> </span
+        > -->
+        </a>
+      </div>
+      <!-- Trailer -->
+      <div onclick="traileropen();" id="hoverBox4" class="cursor-pointer trailer bg-blacks fixed 2xl:left-[33%] 2xl:right-[65%] md:left-[33%] md:right-[65%] left-[40%] right-[60%] mx-auto md:top-[35%] md:bottom-[70%] top-[35%] bottom-[65%] inset-y-0 2xl:w-[190px] w-[110px] 2xl:h-[200px] md:h-[150px] h-[130px]">
+        <a class="md:w-[100px] md:h-[100px] w-[50px] h-[50px] bg-whites absolute spot-dot_Spot--collections__3ZaRR rounded-[9999px] z-50 2xl:top-20 top-4 2xl:-left-4 md:left-[-40px] tra" style="transform: translateX(58.8125px)">
+          <span class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"><span class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"></span><span class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"></span><span class="animate-pulse col-start-1 row-start-1 block w-3 h-3 rounded-[9999px] bg-white"></span></span>
+        </a>
+      </div>
+      <!-- Trailer -->
+      <!--  -->
+      <div onclick="buyopen();" id="hoverBox3" class="cursor-pointer buybuy bg-blacks fixed left-[0%] mx-auto md:bottom-0 bottom-0 2xl:w-[550px] md:w-[400px] w-[250px] 2xl:h-[270px] md:h-[200px] h-[130px]">
+        <a class="md:w-[100px] md:h-[100px] w-[50px] h-[50px] bg-whites absolute spot-dot_Spot--collections__3ZaRR rounded-[9999px] z-50 top-0 buydot" style="transform: translateX(58.8125px)"><span class="spot-dot_SpotInner__zibxk transition-opacity duration-500 ease-out-quart opacity-100"><span class="col-start-1 row-start-1 block w-full h-full rounded-[9999px] opacity-50 bg-black blur-[50px]"></span><span class="animate-ping col-start-1 row-start-1 block w-6 h-6 rounded-[9999px] border border-grey opacity-70"></span><span class="animate-pulse col-start-1 row-start-1 block w-3 h-3 rounded-[9999px] bg-white"></span></span></a>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div id="overlay" class="overlay"></div>
+    <!-- Loader -->
+    <!-- <div aria-label="Main" class="hidden" id="loaderContainer">
+      <div class="res-container">
+        <div class="res-row">
+          <div id="block-1 b3">
+            <div id="loader-wrap">
+              <div id="loading">
+                <div id="loading-center">
+                  <div id="loading-center-absolute">
+                    <div id="object"></div>
+                    <div id="loader"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="res-container">
+        <div class="res-row">
+          <div id="block-1">
+            <div id="block-2"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("loading").className = "slideDown";
+          }, 3800);
+        },
+        false
+      );
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("loading-center").className = "zoomOut";
+          }, 3200);
+        },
+        false
+      );
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          setTimeout(function () {
+            document.getElementById("block-1").className = "slideInUp";
+          }, 3800);
+        },
+        false
+      );
+    </script> -->
+
+    <!-- <script>
+      function navigateWithDelay(event, url) {
+        event.preventDefault();
+        document.getElementById("loaderContainer").classList.remove("hidden");
+        setTimeout(function () {
+          window.location.href = url;
+        }, 1500);
+      }
+    </script> -->
+    <!-- About -->
+    <div id="aboutopen" class="bg-black right-[-5000px] top-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen">
+      <div class="relative h-screen flex justify-center items-center w-full">
+        <a onclick="aboutopen1();" href="javascript:void(0);" class="absolute top-4 left-4 md:z-[102] z-[102]">
+          <img src="img/back.svg" alt="back" class="2xl:w-[200px] w-[100px] hover:scale-110 transition-all duration-300 cursor-pointer">
+        </a>
+        <!-- <img
+          id="mainImage"
+          src="https://darkwolf.b-cdn.net/img/w1.png"
+          alt="pizza"
+          class="w-full h-full md:fixed absolute z-[99]"
+        /> -->
+        <video id="mainImage" class="w-full h-full md:fixed absolute z-[99] object-cover" src="img/Frame%2039%204K.mp4" muted="" loop="" autoplay=""></video>
+        <div class="2xl:w-[800px] md:w-[550px] mx-auto w-[450px] px-4 relative z-[100] lg:pt-20 md:pt-8 pt-4">
+          <div id="contentArea" class="flex justify-center items-center flex-col">
+            <div class="text-[#ff0000] md:text-[70.77px] text-5xl font-normal 2xl:leading-[77.18px]">
+              THE WOLF
+            </div>
+            <div class="w-full 2xl:mt-8 md:mb-5 mt-2 mb-2 flex justify-center items-center flex-col">
+              <div class="text-center">
+                <!-- <span class="text-white md:text-[73.93px] text-[53.93px] font-normal md:leading-[48.96px]">I</span> -->
+                <span class="text-white 2xl:text-[18px] md:text-sm text-sm font-normal 2xl:leading-[48.96px]">
+                  In the shadows of the Matt Furie universe, Wolf emerges as the ultimate antagonist a misunderstood force of rebellion, chaos, and mystery. While Pepe and his carefree crew indulge in their laid-back existence. The Wolf stands apart as an all-knowing, nearly invincible being with supernatural powers. His presence casts a looming shadow over the Boy’s Club, igniting a fierce rivalry that solidifies him as the most feared and respected figure in their world.
+                </span>
+                <p class="text-white 2xl:text-[18px] md:text-sm text-sm font-normal 2xl:leading-[48.96px] lg:mt-5 mt-3">
+                  The Wolf isn’t here to simply challenge the crew he’s here to end them. And neither the Boy’s Club nor the Kolfags can do anything to stop him...
+<br><br class="lg:flex hidden">
+                  Now.. FEED THE BEAST!
+                </p>
+              </div>
+            </div>
+          </div>
+          <a onclick="lon();" href="javascript:void(0);" class="flex justify-center items-end h-full hover:scale-110 transition-all duration-300">
+            <img id="toggleImage" src="img/lon.svg" alt="lon" class="2xl:w-[250px] lg:w-[220px] w-[150px]">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <!-- Trailer -->
+    <div id="traileropen" class="bg-black right-[-5000px] top-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen">
+      <div class="relative h-screen flex justify-center items-center w-full">
+        <a onclick="traileropen1();" href="javascript:void(0);" class="absolute top-4 left-4 md:z-[102] z-[102]">
+          <img src="img/back.svg" alt="back" class="md:w-[200px] w-[100px] hover:scale-110 transition-all duration-300 cursor-pointer">
+        </a>
+        <!-- <img
+         id="mainImage"
+         src="https://darkwolf.b-cdn.net/img/w1.png"
+         alt="pizza"
+         class="w-full h-full md:fixed absolute z-[99]"
+       /> -->
+        <video id="trailerVideo" class="w-full h-full md:fixed absolute z-[99] object-cover hidden" src="vid/WOLF%203.mov" loop="" autoplay="" muted=""></video>
+      </div>
+    </div>
+    <!-- Trailer -->
+    <!-- Buy -->
+    <div id="buyopen" class="right-[-5000px] top-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen">
+      <img src="img/buy1.png" alt="pizza" class="w-full h-full md:fixed absolute z-[99]">
+      <div class="flex justify-start relative z-[101] container mx-auto 2xl:px-10 md:px-5 px20 px-10 items-center h-full">
+        <a onclick="buyopen1();" href="javascript:void(0);" class="absolute md:top-4 top-1 md:left-8 left-4 md:z-[102] z-[102] left100">
+          <img src="img/back.svg" alt="back" class="2xl:w-[200px] lg:w-[150px] w-[70px] hover:scale-110 transition-all duration-300 cursor-pointer">
+        </a>
+        <div class="2xl:py-10 md:py-10 py-10 flex justify-center lg:gap-10 gap-5 lg:flex-nowrap flex-wrap-reverse items-center 2xl:mt-10 mt-1 relative">
+          <div class="2xl:w-[650px] lg:w-[580px] md:w-[450px] w-[370px] wbuy grid md:grid-cols-1 grid-cols-1 2xl:gap-6 gap-1 relative z-20">
+            <div class="w-full custom md:px-7 2xl:py-4 px-4 py-1 rounded-2xl flex md:flex-row flex-col lg:gap-9 gap-1 items-start hover:scale-105 transition-all duration-300"
+            style="display: flex;
+            align-items: center;">
+              
+              <img src="image%2019.png" alt="Meta" class="2xl:w-[110px] 2xl:h-[110px] lg:w-[90px] lg:h-[90px] w-[20px] h-[20px]">
+              <div>
+                <div class="text-[#FF0000] lg:text-2xl text-xs font-black">
+                  INSTALL PHANTOM WALLET
+                </div>
+                <div class="md:mt-2 l15">
+                  <span class="text-white 2xl:text-sm lg:text-[13px] text-[8px] ne md:leading-loose leading-2 uppercase">
+                    DOWNLOAD & INSTALL THE PHANTOM WALLET EITHER FROM THE APP STORE ON YOUR PHONE OR THE BROWSER EXTENSION FOR DESKTOP.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full custom md:px-7 2xl:py-4 px-4 py-1 rounded-2xl flex md:flex-row flex-col lg:gap-9 gap-1 items-start hover:scale-105 transition-all duration-300"
+            style="display: flex;
+            align-items: center;">
+              <img src="image%2020.png" alt="Meta" class="2xl:w-[110px] 2xl:h-[110px] lg:w-[90px] lg:h-[90px] w-[20px] h-[20px]">
+              <div>
+                <div class="text-[#FF0000] lg:text-2xl text-xs font-black">
+                  LOAD UP SOL
+                </div>
+                <div class="md:mt-2 l15">
+                  <span class="text-white 2xl:text-sm lg:text-[13px] text-[8px] ne md:leading-loose leading-2 uppercase">PurchasE SOL directly on your phantom wallet or at a CEX and transfer into your wallet. always leave enough for gas fees.</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full custom md:px-7 2xl:py-4 px-4 py-1 rounded-2xl flex md:flex-row flex-col lg:gap-9 gap-1 items-start hover:scale-105 transition-all duration-300"
+            style="display: flex;
+            align-items: center;">
+              <img src="image%2021.png" alt="Meta" class="2xl:w-[110px] 2xl:h-[110px] lg:w-[90px] lg:h-[90px] w-[20px] h-[20px]">
+              <div>
+                <div class="text-[#FF0000] lg:text-2xl text-xs font-black">
+                  BUY ON PUMP.FUN
+                </div>
+                <div class="md:mt-2 l15">
+                  <span class="text-white 2xl:text-sm lg:text-[13px] text-[8px] ne md:leading-loose leading-2 uppercase">
+                    HEAD OVER TO PUMP.FUN AND PASTE THE the $WOLF contract address and swap your SOL for $WOLF tokens.
+</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full custom md:px-7 2xl:py-4 px-4 py-1 rounded-2xl flex md:flex-row flex-col lg:gap-9 gap-1 lg:items-center hover:scale-105 transition-all duration-300">
+              <img src="t1/dwlogo.png" alt="Meta" class="2xl:w-[120px] lg:w-[80px] lg:h-[36px] md:w-[20px] object-contain w-[50px] h-[20px]">
+              <div>
+                <div class="text-[#FF0000] lg:text-2xl text-xs font-black">
+                  CHECK $WOLF INTO YOUR WALLET
+                </div>
+                <div class="md:mt-2 l15">
+                  <span style="line-height: 5px !important" class="text-white 2xl:text-sm lg:text-[13px] text-[8px] ne md:leading-loose leading-2 uppercase">
+                    NOW ALL YOU HAVE TO DO IS CHECK $WOLF TOKENS INTO YOUR WALLET. WELCOME ABOARD!
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buy -->
+    <!-- Pizza -->
+    <div id="pizzaopen" class="right-[-5000px] top-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen">
+      <div onclick="pizzaopen1();" class="absolute top-4 left-4 md:z-[100] z-[102]">
+        <img src="img/back.svg" alt="back" class="lg:w-[200px] w-[100px] cursor-pointer hover:scale-110 transition-all duration-300">
+      </div>
+      <img src="img/tokenbg.png" alt="pizza" class="w-full h-full md:fixed absolute -z-1">
+      <div class="2xl:w-[1200px] lg:w-[850px] mx-auto w-[400px] px-4 relative top-0 z-[100] 2xl:pt-20 md:pt-10 pt-4 flex justify-center items-center md:h-full">
+        <div>
+          <div class="text-white 2xl:text-[130.77px] md:text-4xl text-3xl font-normal md:leading-[77.18px] text-center 2xl:mb-20 mb-10">
+            TOKENOMICS
+          </div>
+          <div class="w-full md:mt-5 mt-2 mb-2 flex justify-between">
+            <div class="hover:scale-110 transition-all duration-300">
+              <img class="lb" src="1b.png" alt="1">
+            </div>
+            <div class="hover:scale-110 transition-all duration-300">
+              <img class="lp" src="img/lp.png" alt="1">
+            </div>
+          </div>
+          <div class="w-full lg:mt-20 mt10 mt-4 mb-2 flex justify-between">
+            <div class="hover:scale-110 transition-all duration-300">
+              <img class="tax" src="img/tax.png" alt="1">
+            </div>
+            <div class="hover:scale-110 transition-all duration-300">
+              <img class="public" src="img/public.png" alt="1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pizza -->
+    <!-- Empty -->
+
+    <!-- <div
+      id="emptyopen"
+      class="right-[-5000px] top-0 relative md:fixed z-[500000000] md:duration-1000 md:transition-all md:ease-in-out w-full h-screen"
+    >
+      <a
+        onclick="emptyopen1();"
+        href="javascript:void(0);"
+        class="absolute top-4 left-4 md:z-[100] z-[102]"
+      >
+        <img src=" hover:scale-110 transition-all duration-300./img/back.svg" alt="back" class="md:w-[200px] w-[100px]" />
+      </a>
+      <img src="https://darkwolf.b-cdn.net/img/comp.png" alt="pizza" class="w-full h-full md:fixed" />
+    </div> -->
+    <!-- Empty -->
+    <script>
+      function aboutopen() {
+        console.log("aboutopen");
+        document.getElementById("aboutopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.add("myhide");
+        document.getElementById("mob2").classList.add("myhide");
+        hideOtherSections("aboutopen");
+      }
+
+      function aboutopen1() {
+        console.log("aboutopen1");
+        document.getElementById("aboutopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.remove("myhide");
+        document.getElementById("mob2").classList.remove("myhide");
+        refreshPage();
+      }
+
+      function buyopen() {
+        console.log("buyopen");
+        document.getElementById("buyopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.add("myhide");
+        document.getElementById("mob2").classList.add("myhide");
+        hideOtherSections("buyopen");
+      }
+
+      function buyopen1() {
+        console.log("buyopen1");
+        document.getElementById("buyopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.remove("myhide");
+        document.getElementById("mob2").classList.remove("myhide");
+        refreshPage();
+      }
+
+      function pizzaopen() {
+        console.log("pizzaopen");
+        document.getElementById("pizzaopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.add("myhide");
+        document.getElementById("mob2").classList.add("myhide");
+        hideOtherSections("pizzaopen");
+      }
+
+      function pizzaopen1() {
+        console.log("pizzaopen1");
+        document.getElementById("pizzaopen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.remove("myhide");
+        document.getElementById("mob2").classList.remove("myhide");
+        refreshPage();
+      }
+      function traileropen() {
+        console.log("traileropen");
+        const video = document.getElementById("trailerVideo");
+        video.classList.remove("hidden");
+        video.muted = false;
+        video.play();
+        document.getElementById("traileropen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.add("myhide");
+        document.getElementById("mob2").classList.add("myhide");
+        hideOtherSections("traileropen");
+      }
+
+      function traileropen1() {
+        console.log("traileropen");
+        const video = document.getElementById("trailerVideo");
+        video.classList.add("hidden");
+        video.pause();
+        document.getElementById("traileropen").classList.toggle("right-[0px]");
+        document.getElementById("mob1").classList.remove("myhide");
+        document.getElementById("mob2").classList.remove("myhide");
+        refreshPage();
+      }
+
+      function hideOtherSections(currentSectionId) {
+        const sections = ["aboutopen", "buyopen", "pizzaopen", "traileropen"];
+        sections.forEach((section) => {
+          if (section !== currentSectionId) {
+            document.getElementById(section).classList.add("playhide");
+          }
+        });
+      }
+      function refreshPage() {
+        if (window.innerWidth < 768) {
+          window.location.reload();
+        }
+      }
+      // function aboutopen() {
+      //   console.log("about");
+      //   document.getElementById("aboutopen").classList.toggle("right-[0px]");
+      //   document.getElementById("mob1").classList.add("myhide");
+      //   document.getElementById("mob2").classList.add("myhide");
+      //   document.getElementById("buyopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("aboutopen").classList.remove("playhide");
+      // }
+      // function aboutopen1() {
+      //   console.log("about");
+      //   document.getElementById("aboutopen").classList.toggle("right-[0px]");
+      //   document.getElementById("mob1").classList.remove("myhide");
+      //   document.getElementById("mob2").classList.remove("myhide");
+
+      //   document.getElementById("buyopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("aboutopen").classList.add("playhide");
+
+      // }
+      // function buyopen() {
+      //   console.log("buyopen");
+      //   document.getElementById("buyopen").classList.toggle("right-[0px]");
+
+      //   // setTimeout(() => {
+      //   document.getElementById("mob1").classList.add("myhide");
+      //   document.getElementById("mob2").classList.add("myhide");
+      //   // }, 1000);
+      //   document.getElementById("aboutopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("buyopen").classList.remove("playhide");
+      // }
+      // function buyopen1() {
+      //   console.log("buyopen");
+      //   document.getElementById("buyopen").classList.toggle("right-[0px]");
+      //   // document.getElementById("buyopen").classtogList.add("myhide");
+
+      //   document.getElementById("mob1").classList.remove("myhide");
+      //   document.getElementById("mob2").classList.remove("myhide");
+      //   document.getElementById("buyopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("aboutopen").classList.add("playhide");
+      // }
+      // function pizzaopen() {
+      //   console.log("pizzaopen");
+      //   document.getElementById("pizzaopen").classList.toggle("right-[0px]");
+
+      //   document.getElementById("mob1").classList.add("myhide");
+      //   document.getElementById("mob2").classList.add("myhide");
+      //   document.getElementById("buyopen").classList.add("playhide");
+      //   document.getElementById("aboutopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.remove("playhide");
+      // }
+      // function pizzaopen1() {
+      //   console.log("pizzaopen");
+      //   document.getElementById("pizzaopen").classList.toggle("right-[0px]");
+      //   document.getElementById("mob1").classList.remove("myhide");
+      //   document.getElementById("mob2").classList.remove("myhide");
+      //   document.getElementById("buyopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.add("playhide");
+      //   document.getElementById("aboutopen").classList.add("playhide");
+
+      // }
+      // function emptyopen() {
+      //   console.log("emptyopen");
+      //   document.getElementById("emptyopen").classList.toggle("right-[0px]");
+      //   document.getElementById("mob1").classList.add("myhide");
+      //   document.getElementById("mob2").classList.add("myhide");
+
+      //   document.getElementById("aboutopen").classList.add("playhide");
+      //   document.getElementById("pizzaopen").classList.add("playhide");
+      //   document.getElementById("emptyopen").classList.remove("playhide");
+      //   document.getElementById("buyopen").classList.add("playhide");
+      // }
+      // function emptyopen1() {
+      //   console.log("emptyopen");
+      //   document.getElementById("emptyopen").classList.toggle("right-[0px]");
+      //   document.getElementById("mob1").classList.remove("myhide");
+      //   document.getElementById("mob2").classList.remove("myhide");
+      // }
+    </script>
+    <!-- Loader -->
+    <script>
+      const hoverBox = document.getElementById("hoverBox");
+      const hoverBox1 = document.getElementById("hoverBox1");
+      const hoverBox2 = document.getElementById("hoverBox2");
+      const hoverBox3 = document.getElementById("hoverBox3");
+      const hoverBox4 = document.getElementById("hoverBox4");
+      const image1 = document.getElementById("image1");
+      const image2 = document.getElementById("image2");
+      const image3 = document.getElementById("image3");
+      // const imagebunk = document.getElementById("imagebunk");
+      const image4 = document.getElementById("image4");
+      const image5 = document.getElementById("image5");
+      const image6 = document.getElementById("image6");
+      const image7 = document.getElementById("image7");
+      const loadingScreen = document.getElementById("loadingScreen");
+
+      hoverBox.addEventListener("mouseover", () => {
+        image1.classList.remove("opacity-0");
+        image2.classList.remove("opacity-0");
+        image1.classList.add("op");
+        image3.classList.add("opacity-0");
+        // imagebunk.classList.add("opacity-0");
+        image4.classList.add("opacity-0");
+        image5.classList.add("opacity-0");
+        loadingScreen.classList.add("opacity-0");
+      });
+
+      hoverBox.addEventListener("mouseout", () => {
+        image1.classList.remove("opacity-0");
+        image2.classList.add("opacity-0");
+      });
+
+      hoverBox1.addEventListener("mouseover", () => {
+        image1.classList.remove("opacity-0");
+        image3.classList.remove("opacity-0");
+        image2.classList.add("opacity-0");
+        // imagebunk.classList.remove("opacity-0");
+        image4.classList.add("opacity-0");
+        image5.classList.add("opacity-0");
+        loadingScreen.classList.add("opacity-0");
+
+        // image1.classList.add("op");
+        // image2.classList.add("op");
+        // image4.classList.add("op");
+        // image5.classList.add("op");
+        // when new page added remove below
+        // image1.classList.add("playhide");
+        image2.classList.add("playhide");
+        image4.classList.add("playhide");
+        image5.classList.add("playhide");
+      });
+
+      hoverBox1.addEventListener("mouseout", () => {
+        image1.classList.remove("opacity-0");
+        image3.classList.add("opacity-0");
+        // imagebunk.classList.add("opacity-0");
+      });
+
+      hoverBox2.addEventListener("mouseover", () => {
+        image1.classList.remove("opacity-0");
+        image2.classList.add("opacity-0");
+        image3.classList.add("opacity-0");
+        // imagebunk.classList.add("opacity-0");
+        image4.classList.remove("opacity-0");
+        image5.classList.add("opacity-0");
+        loadingScreen.classList.add("opacity-0");
+
+        // image1.classList.add("playhide");
+        image2.classList.add("playhide");
+        image3.classList.add("playhide");
+        // imagebunk.classList.add("playhide");
+        image5.classList.add("playhide");
+      });
+
+      hoverBox2.addEventListener("mouseout", () => {
+        image1.classList.remove("opacity-0");
+        image4.classList.add("opacity-0");
+      });
+
+      hoverBox3.addEventListener("mouseover", () => {
+        image1.classList.remove("opacity-0");
+        image2.classList.add("opacity-0");
+        image3.classList.add("opacity-0");
+        // imagebunk.classList.add("opacity-0");
+        image4.classList.add("opacity-0");
+        image5.classList.remove("opacity-0");
+        loadingScreen.classList.add("opacity-0");
+
+        image1.classList.add("op");
+        image2.classList.add("op");
+        image3.classList.add("op");
+        // imagebunk.classList.add("op");
+        image4.classList.add("op");
+      });
+
+      hoverBox3.addEventListener("mouseout", () => {
+        image1.classList.remove("opacity-0");
+        image5.classList.add("opacity-0");
+      });
+      hoverBox4.addEventListener("mouseover", () => {
+        image1.classList.remove("opacity-0");
+        image2.classList.add("opacity-0");
+        image3.classList.add("opacity-0");
+        // imagebunk.classList.add("opacity-0");
+        image4.classList.add("opacity-0");
+        image5.classList.add("opacity-0");
+        image7.classList.remove("opacity-0");
+        // image6.classList.remove("opacity-0");
+        loadingScreen.classList.add("opacity-0");
+
+        image1.classList.add("op");
+        image2.classList.add("op");
+        image3.classList.add("op");
+        // imagebunk.classList.add("op");
+        image4.classList.add("op");
+        image5.classList.add("op");
+      });
+
+      hoverBox4.addEventListener("mouseout", () => {
+        image1.classList.remove("opacity-0");
+        image7.classList.add("opacity-0");
+      });
+    </script>
+    <script>
+      let copyText = document.querySelector(".copy-text");
+      copyText.querySelector("button").addEventListener("click", function () {
+        let input = copyText.querySelector("input.text");
+        input.select();
+        document.execCommand("copy");
+        copyText.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function () {
+          copyText.classList.remove("active");
+        }, 2500);
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        const overlay = document.getElementById("overlay");
+        setTimeout(function () {
+          overlay.classList.add("fade-out");
+          setTimeout(function () {
+            overlay.classList.add("hidden");
+          }, 1000);
+        }, 1000);
+
+        setTimeout(() => {
+          document.getElementById("loadingScreen").classList.add("hiddens");
+        }, 3000);
+        let dotCount = 0;
+        const dotsElement = document.getElementById("dots");
+
+        setInterval(() => {
+          dotCount = (dotCount + 1) % 4;
+          dotsElement.innerHTML = ".".repeat(dotCount);
+        }, 500);
+      };
+    </script>
+
+    <!--  -->
+    <script>
+      const hoverBox2shake = document.getElementById("hoverBox1");
+      const image4shake = document.getElementById("image3");
+      const image1shake1 = document.getElementById("image1");
+
+      hoverBox2shake.addEventListener("click", () => {
+        image4shake.classList.add("shake");
+        image4shake.classList.add("zup");
+        image1shake1.classList.add("zdown");
+        image1shake1.classList.add("shake");
+        setTimeout(() => {
+          image4shake.classList.remove("shake");
+          image4shake.classList.remove("zup");
+          image1shake1.classList.remove("zdown");
+          image1shake1.classList.remove("shake");
+        }, 500);
+      });
+    </script>
+    <script>
+      let isToggled = false;
+      function lon() {
+        if (!isToggled) {
+          document.getElementById("toggleImage").src =
+            "https://darkwolf.b-cdn.net/img/loff.svg";
+          document.getElementById("mainImage").src =
+            "https://darkwolf.b-cdn.net/img/Frame 40 FIX 4K.mp4";
+          document.getElementById("contentArea").style.visibility = "hidden";
+        } else {
+          document.getElementById("toggleImage").src =
+            "https://darkwolf.b-cdn.net/img/lon.svg";
+          document.getElementById("mainImage").src =
+            "https://darkwolf.b-cdn.net/img/Frame 39 4K.mp4";
+          document.getElementById("contentArea").style.visibility = "visible";
+        }
+
+        isToggled = !isToggled;
+      }
+    </script>
+      <!-- <script>
+        function adjustImageWidth() {
+          const image = document.getElementById('myImage');
+          const screenWidth = window.innerWidth;
+    
+          if (screenWidth >= 900 && screenWidth <= 1024) {
+            image.style.width = '42px';
+          } else {
+            image.style.width = '50px'; // Повернути стандартну ширину
+          }
+        }
+    
+        // Виклик функції при завантаженні сторінки
+        window.onload = adjustImageWidth;
+    
+        // Виклик функції при зміні розміру вікна
+        window.onresize = adjustImageWidth;
+      </script> -->
+      <!-- <style>
+        .w20 {
+          width: 50px; /* Стандартний розмір */
+        }
+      </style> -->
+    <!--  -->
+    <!-- <script>
+      // Для першої SVG
+      const svg1 = document.querySelector('.svg1');
+      const link1 = document.querySelector('.link1');
+      
+      link1.addEventListener('mouseenter', () => {
+        svg1.querySelector('path').setAttribute('fill', '#FF0026');
+      });
+    
+      link1.addEventListener('mouseleave', () => {
+        svg1.querySelector('path').setAttribute('fill', '#AF1717');
+      });
+    
+    </script> -->
+    <style>
+      .hiddens {
+        /* opacity: 0; */
+        display: none;
+        transition: opacity 1s ease-in-out;
+        pointer-events: none;
+      }
+    </style>
+    <style>
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 70;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .fade-out {
+        opacity: 0;
+      }
+
+      .fix {
+        position: fixed;
+        z-index: -10;
+      }
+    </style>
+    <style>
+      .res-container {
+        width: 100%;
+        position: absoulte;
+        margin-bottom: 0;
+      }
+
+      .res-row {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        /* NEW - Opera 12.1, Firefox 20+ */
+      }
+      #box {
+        -webkit-box-flex: 1;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        -moz-box-flex: 1;
+        /* OLD - Firefox 19- */
+        -webkit-flex: 1;
+        /* Chrome */
+        -ms-flex: 1;
+        /* IE 10 */
+        flex: 1;
+        width: 100%;
+        /* Old syntax, otherwise collapses. */
+      }
+      /*...................*/
+      #block-1 {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+      }
+      #block-2 {
+      }
+      .b3 {
+        position: fixed;
+      }
+
+      /*****************/
+      #loader-wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+      #loading {
+        background-color: #1c1c1c;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 0px;
+        top: 0px;
+      }
+
+      /***************/
+      #loading-center {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      #loading-center-absolute {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+      }
+      #object {
+        width: 200px;
+        height: 200px;
+        background-image: url(https://reech.ca/wp-content/uploads/2017/09/reech-logo-no-text.svg);
+        background-repeat: no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+
+      /***************************/
+
+      #object {
+        animation: object 0.8s linear;
+        transform-origin: center center;
+      }
+      @keyframes object {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.5);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      /*********loader line******************/
+      #loader {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -50px;
+        width: 100px;
+        height: 3px;
+        overflow: hidden;
+      }
+      #loader:before,
+      #loader:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        transform: translate(-100%, 0);
+      }
+      #loader:before {
+        background-color: #fec400;
+        animation: loading 3400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #loader:after {
+        background-color: #fff;
+        animation: loading 2500ms 500ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      @keyframes loading {
+        75% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(100%, 0);
+        }
+      }
+
+      /***********************/
+
+      /*************************/
+      #hero-box {
+        position: relative;
+        height: 100%;
+        width: 80%;
+      }
+
+      .bg {
+        position: absolute;
+        background-image: url(https://www.jeans.ch/out/pictures/generated/product/1/310_412_75/sol_fred-perry-white-men-shirt-m8272-200_f_1.png) !important;
+        background-size: cover !important;
+        background-position: center;
+        z-index: 1 !important;
+        width: 30vw;
+        height: 100vh;
+        left: 12%;
+      }
+      /* .overlay {
+        position: absolute;
+        background-image: url(https://reech.ca/wp-content/uploads/2017/10/xnado-pattern-white.svg) !important;
+        background-repeat: repeat;
+        background-size: contain !important;
+        height: 50vh;
+        width: 38vw;
+        margin-left: 12%;
+        top: 30%;
+      } */
+
+      /*.......................*/
+      #header-wrap {
+        position: absolute;
+        width: 80px;
+        height: 3px;
+        top: 45%;
+        left: 49.5%;
+      }
+      #header {
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        color: #1c1c1c;
+        line-height: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+      #header-o {
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        color: #1c1c1c;
+        line-height: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        margin-left: -5%;
+        font-weight: 700;
+        font-size: 1rem;
+        top: -4px;
+      }
+      #header-o:after {
+        content: "";
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        background: #1c1c1c;
+        height: 2.5px;
+        bottom: -1px;
+      }
+      #header-0 {
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        color: #1c1c1c;
+        line-height: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-left: -4%;
+        font-weight: 700;
+      }
+      #header-1 {
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        color: #1c1c1c;
+        line-height: 100%;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-left: -7%;
+        font-weight: 700;
+      }
+
+      #left-line {
+        width: 60px;
+        height: 2px;
+        display: block;
+        background-color: #1c1c1c;
+        position: absolute;
+        margin-top: -16%;
+        left: -90%;
+      }
+
+      /**************************/
+
+      #hero-text {
+        position: absolute;
+        top: 56%;
+        left: 44%;
+        font-size: 5rem;
+        color: #1c1c1c;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1px;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        z-index: 1 !important;
+        opacity: 1;
+      }
+
+      #s-txt {
+        position: absolute;
+        bottom: 12%;
+        right: -1%;
+        font-size: 0.6rem;
+        color: #1c1c1c;
+        font-weight: 300;
+        letter-spacing: 0.4em;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        z-index: 1 !important;
+        opacity: 1;
+
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+      }
+      #lg-ltrs {
+        position: absolute;
+        left: 0%;
+        bottom: -16%;
+        margin-left: -3%;
+        font-size: 10rem;
+        color: #fc5252;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        z-index: 1 !important;
+        opacity: 1;
+
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
+
+      /***********SLIDE DOWN***************/
+
+      .slideDown {
+        bottom: 0 !important;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+      }
+
+      .slideDown {
+        animation-name: slideDown;
+        -webkit-animation-name: slideDown;
+
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        visibility: visible !important;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(0%);
+        }
+        to {
+          transform: translateY(100%);
+        }
+      }
+
+      @-webkit-keyframes slideDown {
+        from {
+          transform: translateY(0%);
+        }
+        to {
+          transform: translateY(100%);
+        }
+      }
+
+      /*********************/
+
+      .slideInUp {
+        animation-name: slideInUp;
+        -webkit-animation-name: slideInUp;
+
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in;
+        -webkit-animation-timing-function: ease-in;
+        visibility: visible !important;
+      }
+
+      @keyframes slideInUp {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+      @-webkit-keyframes slideInUp {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+
+      @keyframes zoomOut {
+        from {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+
+      .zoomOut {
+        animation-name: zoomOut;
+
+        animation-name: zoomOut;
+        -webkit-animation-name: zoomOut;
+
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        visibility: visible !important;
+      }
+      @media (max-width: 768px) {
+        .overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vh;
+          height: 100vw;
+          background-color: rgba(0, 0, 0);
+          transition: background-color 3s ease-in-out;
+        }
+        /* .op {
+          display: none;
+        } */
+        #loading {
+          background-color: #1c1c1c;
+          width: 100vh;
+          height: 100vw;
+          position: fixed;
+          z-index: 2;
+          margin-top: 0px;
+          top: 0px;
+        }
+        .myhide {
+          display: none;
+        }
+        .playhide {
+          display: none;
+        }
+        /* body {
+          background: url("./room.png");
+          background-repeat: no-repeat;
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+        } */
+        @media (max-width: 768px) {
+          .image6 {
+            position: absolute !important;
+            left: 0 !important;
+            right: 0 !important;
+            top: 0 !important;
+          }
+        }
+      }
+      /* @media (max-width: 900px) and (orientation: portrait) {
+        .trailer {
+          left: 20% !important;
+        }
+      } */
+      @media (min-width: 768px) and (max-width: 900px) {
+        .trailer {
+          left: 30% !important;
+          top: 28%;
+          width: 100px !important;
+          height: 110px;
+        }
+        .tra {
+          margin-left: -30px !important;
+        }
+        .bunk {
+          right: -5% !important;
+          width: 280px !important;
+          height: 100px !important;
+        }
+        .wolff {
+          left: 45% !important;
+          top: 15% !important;
+          height: 150px !important;
+        }
+        .leftwolf {
+          margin-left: -80px !important;
+        }
+        .buybuy {
+          width: 250px !important;
+          height: 140px !important;
+        }
+        .chest {
+          margin-top: 5px !important;
+          width: 150px !important;
+          height: 100px !important;
+        }
+        .buydot {
+          margin-top: -30px !important;
+        }
+      }
+      @media (max-width: 900px) {
+        .w50 {
+          width: 30px;
+        }
+        .w20 {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      @media (max-width: 768px) {
+        .left50 {
+          left: 45%;
+        }
+        .w50 {
+          width: 30px;
+        }
+        .w20 {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </body>
+</html>
